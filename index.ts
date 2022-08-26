@@ -94,3 +94,14 @@ appObject.innerHTML = `
 <h1>Object</h1>
 `;
 */
+
+let someValue: any = 'This is a string';
+let striLenght: number = (<string>someValue).length;
+
+let someValue2: any = 'This is a string';
+let striLenght2: number = (someValue as string).length;
+
+const appValue: HTMLElement = document.getElementById('app.value');
+appValue.innerHTML = `
+<h1>Type assertions</h1>
+`;
