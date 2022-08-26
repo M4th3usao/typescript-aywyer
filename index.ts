@@ -123,7 +123,7 @@ appFunction.innerHTML = `
 <h1>Function</h1>
 <h2>Soma de 2 e 3: ${sum(2, 3)}</h2>
 <h2>Soma de 11 e 329: ${sum(11, 329)}</h2>
-<h2>MEu nome completo: ${fullName({
+<h2>Meu nome completo: ${fullName({
   lastname: 'Oliveira',
   name: 'Matheus',
 })}</h2>
