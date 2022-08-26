@@ -151,3 +151,23 @@ function alertMethod(this: HTMLElement, ev: Event) {
 //Write TypeScript code!
 const appH1: HTMLElement = document.getElementById('app.h1');
 appH1.innerHTML = title;
+
+//Class
+
+class Greeter {
+  greeting: string;
+  constructor(message: string) {
+    this.greeting = message;
+  }
+  greet() {
+    return 'Hello, ' + this.greeting;
+  }
+}
+
+let greeter = new Greeter('MyAp');
+
+const appClass: HTMLElement = document.getElementById('app.class');
+appClass.innerHTML = `
+<h1>Classes</h1>
+<h2>${greeter.greet()}!</h2>
+`;
