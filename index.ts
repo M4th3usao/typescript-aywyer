@@ -80,6 +80,8 @@ appVoid.innerHTML = `
 <h2>myFunctio: ${myFunction}</h2>
 `;
 
+//Object
+
 declare function create(o: object | null): void;
 create({ prop: 0 }); //Ok
 create(null); //ok
@@ -104,4 +106,25 @@ let striLenght2: number = (someValue as string).length;
 const appValue: HTMLElement = document.getElementById('app.value');
 appValue.innerHTML = `
 <h1>Type assertions</h1>
+`;
+
+//Function
+function sum(h1: number, h2: number): number {
+  return h1 + h2;
+}
+
+//pessoa é o nome do objeto
+function fullName(pessoa: { name: string; lastname: string }): string {
+  return pessoa.name + ' ' + pessoa.lastname;
+}
+
+const appFunction: HTMLElement = document.getElementById('app.function');
+appFunction.innerHTML = `
+<h1>Function</h1>
+<h2>Soma de 2 e 3: ${sum(2, 3)}</h2>
+<h2>Soma de 11 e 329: ${sum(11, 239)}</h2>
+<h2>MEu nome completo: ${fullName({
+  lastname: 'Oliveira',
+  name: 'Matheus',
+})}</h2>
 `;
