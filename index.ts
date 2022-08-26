@@ -7,7 +7,7 @@ let list: number[] = [1, 2, 3];
 
 let otherList: Array<number> = [1, 2, 3];
 
-const appDiv: HTMLElement = document.getElementById('app');
+const appDiv: HTMLElement = document.getElementById('app.array');
 appDiv.innerHTML = `
 <h1>Array declaration</h1>
 <h2> List: ${list}</h2>
@@ -21,7 +21,7 @@ let me: [String, number];
 me = ['Matheus', 20];
 
 const appTuple: HTMLElement = document.getElementById('app.tuple');
-appDiv.innerHTML = `
+appTuple.innerHTML = `
 <h1>Tuple</h1>
 <h2>Me chamo ${me[0]} e tenho ${me[1]} anos</h2>
 `;
