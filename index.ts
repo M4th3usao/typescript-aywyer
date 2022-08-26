@@ -88,7 +88,9 @@ create(null); //ok
 //create(false); // Erro
 create(undefined); // Erro
 
+/* SOMENTE ILUSTRAÇÃO
 const appObject: HTMLElement = document.getElementById('app.object');
 appObject.innerHTML = `
 <h1>Object</h1>
 `;
+*/
