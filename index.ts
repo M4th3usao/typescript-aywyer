@@ -128,3 +128,26 @@ appFunction.innerHTML = `
   name: 'Matheus',
 })}</h2>
 `;
+
+//EventLIst
+
+let title: string = 'Olá, mundo!';
+let paragraph: string = 'Blablablabla...';
+
+let counter = 0;
+
+let intervalId = setInterval(() => {
+  counter = counter + 1;
+  const appP: HTMLElement = document.getElementById('app.p');
+  appP.innerHTML = 'Contadot:' + counter;
+}, 1000);
+
+const btn = document.getElementById('app.btn');
+btn?.addEventListener('click', alertMethod);
+function alertMethod(this: HTMLElement, ev: Event) {
+  alert('Alertando com TypeScript');
+}
+
+//Write TypeScript code!
+const appH1: HTMLElement = document.getElementById('app.h1');
+appH1.innerHTML = title;
