@@ -2,6 +2,7 @@
 import './style.css';
 
 //Arrays:
+
 let list: number[] = [1, 2, 3];
 
 let otherList: Array<number> = [1, 2, 3];
@@ -14,6 +15,7 @@ appDiv.innerHTML = `
 `;
 
 //Tuples
+
 let me: [String, number];
 
 me = ['Matheus', 20];
@@ -39,9 +41,21 @@ enum ColorWithRef {
 }
 let color2: ColorWithRef = ColorWithRef.Blue;
 
-const appEnum: HTMLElement = document.getElementById('app');
+const appEnum: HTMLElement = document.getElementById('app.enum');
 appEnum.innerHTML = `
 <h1>Enumerated Types</h1>
 <h2>Cor 1: ${color}</h2>
 <h2>Cor 2: ${color2}</h2>
+`;
+
+//Any
+
+let notSure: any = 4;
+notSure = 'Maybe I am a string';
+notSure = false; //okay, definity  e boolean
+
+const appAny: HTMLElement = document.getElementById('app.Any');
+appAny.innerHTML = `
+<h1>Variable</h1>
+<h2>${notSure}</h2>
 `;
