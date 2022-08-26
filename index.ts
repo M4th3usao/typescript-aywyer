@@ -59,3 +59,23 @@ appAny.innerHTML = `
 <h1>Variable</h1>
 <h2>${notSure}</h2>
 `;
+
+//Void
+
+function warnUser(): void {
+  console.log('This is my warning message');
+}
+
+let myFunction: void = warnUser();
+
+let unusable: void = undefined;
+unusable = null;
+
+myFunction;
+
+const appVoid: HTMLElement = document.getElementById('app.void');
+appVoid.innerHTML = `
+<h1>Void</h1>
+<h2>unusable: ${unusable}</h2>
+<h2>myFunctio: ${myFunction}</h2>
+`;
