@@ -71,7 +71,7 @@ let myFunction: void = warnUser();
 let unusable: void = undefined;
 unusable = null;
 
-myFunction;
+myFunction; //Executa a variável void sem retornar na tela
 
 const appVoid: HTMLElement = document.getElementById('app.void');
 appVoid.innerHTML = `
