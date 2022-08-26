@@ -54,7 +54,7 @@ let notSure: any = 4;
 notSure = 'Maybe I am a string';
 notSure = false; //okay, definity  e boolean
 
-const appAny: HTMLElement = document.getElementById('app.Any');
+const appAny: HTMLElement = document.getElementById('app.any');
 appAny.innerHTML = `
 <h1>Variable</h1>
 <h2>${notSure}</h2>
